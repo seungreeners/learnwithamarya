@@ -89,13 +89,41 @@
   } 
 }
 
-@media (max-width: 520px) {
+@media (min-width: 499px) and (max-width: 530px) {
+  html {
+    overflow-y: scroll;
+  }
   .app {
     nav.site-nav {
       li {
-        display: block;
+        a {
+          font-size: 0.85em;
+        }
       }
     }
   }
+}
 
+@media (max-width: 500px) {
+  .site-nav {
+    text-align: center;
+    width: $full;
+    padding: 0;
+  }
+  header .logo {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .app {
+    .site-hero {
+      .info-section {
+        font-size: .8em;
+      }
+      .realtime-app,
+      .info-section {
+        width: $full;
+        float: none;
+      }
+    }
+  }
 }

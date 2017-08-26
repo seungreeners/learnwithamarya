@@ -662,9 +662,28 @@ body ::-o-selection {
       margin-top: -2px; }
       .app header .site-nav li {
         margin-right: 8px; } }
-@media (max-width: 520px) {
-  .app nav.site-nav li {
-    display: block; } }
+@media (min-width: 499px) and (max-width: 530px) {
+  html {
+    overflow-y: scroll; }
+
+  .app nav.site-nav li a {
+    font-size: 0.85em; } }
+@media (max-width: 500px) {
+  .site-nav {
+    text-align: center;
+    padding: 0;
+    width: 100%; }
+
+  header .logo {
+    text-align: center;
+    margin: 0 auto; }
+
+  .app .site-hero .info-section {
+    font-size: .8em; }
+  .app .site-hero .realtime-app,
+  .app .site-hero .info-section {
+    width: 100%;
+    float: none; } }
 @font-face {
   font-family: 'Source Sans Pro';
   src: url("../../fonts/sourcesanspro/SourceSansPro-Light.ttf") format("truetype");
