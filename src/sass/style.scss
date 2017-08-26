@@ -1,31 +1,32 @@
 @charset 'utf-8';
 
 @import
-  'includes/normalize',
-  'includes/variables',
-  'includes/mixins',
-  'includes/base';
+  'includes/normalize'
+   , 'includes/variables'
+   , 'includes/mixins'
+   , 'includes/base'
+   , 'includes/mq';
 
-  @font-face {
-    font-family: 'Source Sans Pro';
-    src: url('../../fonts/sourcesanspro/SourceSansPro-Light.ttf') format('truetype');
-    font-style: normal;
-    font-weight: 200;
-  }
-  
-  @font-face {
-    font-family: 'Source Sans Pro';
-    src: url('../../fonts/sourcesanspro/SourceSansPro-Regular.ttf') format('truetype');
-    font-style: normal;
-    font-weight: 400;
-  }
-  
-  @font-face {
-    font-family: 'Source Sans Pro';
-    src: url('../../fonts/sourcesanspro/SourceSansPro-Bold.ttf') format('truetype');
-    font-style: normal;
-    font-weight: 600;
-  }
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../../fonts/sourcesanspro/SourceSansPro-Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../../fonts/sourcesanspro/SourceSansPro-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../../fonts/sourcesanspro/SourceSansPro-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}
 
 a {
   @include transition(color linear .3s);
@@ -39,6 +40,7 @@ a {
 }
 
 header {
+  @include box-shadow(0px 9px 7px -6px rgba(0, 0, 0, .1));
   border-bottom: 1px solid #eeeeee;
   padding: 10px 20px 10px 40px;
   background-color: #ffffff;
@@ -129,6 +131,7 @@ header .site-nav {
     @include border-radius(0px);
     display: inline-block;
     background: #333333;
+    margin-bottom: 10px;
     margin-right: 3px;
     padding: 8px 15px;
     font-size: .65em;
