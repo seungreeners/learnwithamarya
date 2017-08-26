@@ -68,7 +68,7 @@
       }
       .info-section {
         padding: 10px 20px;
-        font-size: .7em;
+        font-size: .65em;
         width: 50%;
       }
     }
@@ -87,4 +87,15 @@
       }
     } 
   } 
+}
+
+@media (max-width: 520px) {
+  .app {
+    nav.site-nav {
+      li {
+        display: block;
+      }
+    }
+  }
+
 }

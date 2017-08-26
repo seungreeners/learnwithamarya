@@ -651,7 +651,7 @@ body ::-o-selection {
     width: 50%; }
   .app .site-hero .info-section {
     padding: 10px 20px;
-    font-size: .7em;
+    font-size: .65em;
     width: 50%; }
   .app header {
     padding: 10px 5px 10px 10px; }
@@ -662,6 +662,9 @@ body ::-o-selection {
       margin-top: -2px; }
       .app header .site-nav li {
         margin-right: 8px; } }
+@media (max-width: 520px) {
+  .app nav.site-nav li {
+    display: block; } }
 @font-face {
   font-family: 'Source Sans Pro';
   src: url("../../fonts/sourcesanspro/SourceSansPro-Light.ttf") format("truetype");
