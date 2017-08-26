@@ -1,2 +1,2 @@
-# amarya-bot
+# Amarya Bot
 Your personal cooking tutor :)
