@@ -2,10 +2,10 @@
 
 @import
   'includes/normalize'
-   , 'includes/variables'
-   , 'includes/mixins'
-   , 'includes/base'
-   , 'includes/mq';
+  , 'includes/variables'
+  , 'includes/mixins'
+  , 'includes/base'
+  , 'includes/mq';
 
 @font-face {
   font-family: 'Source Sans Pro';
@@ -32,7 +32,7 @@ a {
   @include transition(color linear .3s);
   padding-bottom: 0px;
   text-decoration: none;
-  color: #000000;
+  color: #222222;
   &:hover {
     padding-bottom: 5px;
     color: $basecolor;

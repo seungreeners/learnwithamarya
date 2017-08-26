@@ -620,11 +620,11 @@ body ::-o-selection {
 
 @media (min-width: 900px) and (max-width: 1000px) {
   .app .site-hero .realtime-app {
-    width: 45%; }
+    width: 44%; }
   .app .site-hero .info-section {
     font-size: .77em;
-    width: 55%; } }
-@media (min-width: 800px) and (max-width: 900px) {
+    width: 56%; } }
+@media (min-width: 800px) and (max-width: 899px) {
   .app .site-hero .realtime-app {
     width: 45%; }
   .app .site-hero .info-section {
@@ -638,16 +638,20 @@ body ::-o-selection {
     width: 50%; } }
 @media (min-width: 600px) and (max-width: 699px) {
   .app .site-hero .realtime-app {
-    width: 45%; }
+    width: 44%; }
   .app .site-hero .info-section {
     font-size: .77em;
-    width: 55%; } }
+    width: 56%; }
+  .app header {
+    padding: 10px 15px 10px 35px; }
+  .app .site-nav li {
+    margin-right: 5px; } }
 @media (min-width: 500px) and (max-width: 599px) {
   .app .site-hero .realtime-app {
     width: 50%; }
   .app .site-hero .info-section {
     padding: 10px 20px;
-    font-size: .6em;
+    font-size: .7em;
     width: 50%; }
   .app header {
     padding: 10px 5px 10px 10px; }
@@ -681,7 +685,7 @@ a {
   transition: color linear 0.3s;
   padding-bottom: 0px;
   text-decoration: none;
-  color: #000000; }
+  color: #222222; }
   a:hover {
     padding-bottom: 5px;
     color: #003966; }
