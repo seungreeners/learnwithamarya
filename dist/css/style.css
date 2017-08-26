@@ -618,6 +618,21 @@ body ::-o-selection {
   opacity: 1;
   filter: alpha(opacity=100); }
 
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../../fonts/SourceSansPro-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 200; }
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../../fonts/SourceSansPro-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("../../fonts/SourceSansPro-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600; }
 a {
   -webkit-transition: color linear 0.3s;
   -moz-transition: color linear 0.3s;
