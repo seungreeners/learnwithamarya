@@ -13,4 +13,4 @@ var webButton = document.getElementById( 'web' );
 var iframe = document.getElementsByTagName( 'iframe' )[0];
 var iframeDoc = ( iframe.contentDocument ) ? iframe.contentDocument : iframe.contentWindow.document;
 
-console.log(iframeDoc);
+console.log( iframeDoc );
