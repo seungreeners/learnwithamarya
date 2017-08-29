@@ -1,11 +1,12 @@
 // let's get started.
 var links = document.querySelectorAll( 'a[href="#"]' );
 
-links.forEach( function( link ) {
+for ( var i = 0; i < links.length; i++ ) {
+  var link = links[ i ];
   link.addEventListener( 'click', function( event ) {
     event.preventDefault();
   }, false );
-}, this );
+}
 
 // get the iframe stuff.
 var webButton = document.getElementById( 'web' );
