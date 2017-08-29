@@ -28,6 +28,10 @@
   font-weight: 600;
 }
 
+.app {
+  position: relative;
+}
+
 a {
   @include transition(color linear .3s);
   padding-bottom: 0px;
@@ -83,50 +87,61 @@ header .site-nav {
   font-size: 1.5em;
   height: $full;
   width: $full;
+  
+  .info-section, 
+  .realtime-app {
+    display: inline-block;
+    height: $full;
+  }
+}
+
+.info-section {
+  background: $basecolor url('../../images/bg.jpg') no-repeat;
+  border-right: 1px solid rgba(#D3D3D3, .7);
+  padding: 20px 40px;
+  width: 70%;
   * {
+    @extend .text-left;
     color: #f9f9f9;
   }
-  h1 {
+  h1,
+  p {
     @include text-shadow(0px 2px 10px #333);
-    user-select: none;
+  }
+  h1 {
     font-size: 2.3em;
     line-height: 1;
     cursor: default;
     padding: 0px;
   }
   p {
-    @include text-shadow(0px 2px 10px #333);
-    user-select: none;
     margin-top: 10px;
   }
-
-  .info-section, 
-  .realtime-app {
-    display: inline-block;
+  .disclaimer {
+    margin-top: 10px;
+    p {
+      font-size: .8em;
+    }
+  }
+}
+.realtime-app {
+  background: #F4F5F5;
+  width: 30%;
+  > iframe {
+    position: relative;
     height: $full;
-  }
-
-  .info-section {
-    // background: lighten($basecolor, 5%);
-    background: $basecolor url('../../images/bg.jpg') no-repeat;
-    border-right: 1px solid rgba(#D3D3D3, .7);
-    padding: 20px 40px;
-    width: 70%;
-    * {
-      @extend .text-left;
-    }
-  }
-  .realtime-app {
-    background: #F4F5F5;
-    width: 30%;
-    > iframe {
-      position: relative;
-    }
+    border: none;
   }
 }
 
 .bot-platforms {
-  .bot-platform {
+  .prompt {
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #f5f5f5;
+    margin-top: 0;
+  }
+  a {
     @include transition(background .3s linear);
     @include border-radius(0px);
     display: inline-block;
@@ -172,24 +187,4 @@ header .site-nav {
     }
 
   }
-  .prompt {
-    margin-bottom: 5px;
-    font-size: 1em;
-    color: #f5f5f5;
-    margin-top: 0;
-  }
-}
-
-section.info-modal {
-  position: absolute;
-  background: #ffffff;
-  position: absolute;
-  @extend .radius;
-  z-index: 9999;
-  padding: 20px;
-  width: 500px;
-  right: 25%;
-  left: 25%;
-  bottom: 0;
-  top: 50%;
 }

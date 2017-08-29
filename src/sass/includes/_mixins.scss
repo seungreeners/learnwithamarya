@@ -2,6 +2,14 @@
   Mixins
 ========================================================================== */
 
+@mixin browser-prefix($property, $value) {
+  -webkit-#{$property}: #{$value};
+  -moz-#{$property}:    #{$value};
+  -ms-#{$property}:     #{$value};
+  -o-#{$property}:      #{$value};
+  #{$property}:         #{$value};
+}
+
 @mixin border-radius($radius: 2px) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
