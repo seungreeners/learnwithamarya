@@ -69,8 +69,13 @@
   <script src="./src/js/script.js" type="text/javascript" charset="utf-8"></script>
 
   <script type="text/javascript" charset="utf-8">
-    /* Disable scroll */
-    var keys = {37: 1, 39: 1}; function preventDefault(e) { e = e || window.event; if (e.preventDefault) e.preventDefault(); e.returnValue = false; } function preventDefaultForScrollKeys(e) { if (keys[e.keyCode]) { preventDefault(e); return false; } } function disableScroll() { if (window.addEventListener) window.addEventListener('DOMMouseScroll', preventDefault, false); window.onwheel = preventDefault; window.onmousewheel = document.onmousewheel = preventDefault; window.ontouchmove  = preventDefault; document.onkeydown  = preventDefaultForScrollKeys; } disableScroll();
+    function noscroll() {
+      window.scrollTo( 0, 0 );
+    }
+    // add listener to disable scroll
+    if (window.innerWidth > 600) {
+      window.addEventListener('scroll', noscroll);
+    }
   </script>
 </body>
 </html>
