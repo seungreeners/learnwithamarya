@@ -1,6 +1,6 @@
 * {
   @include browser-prefix('user-select', none);
-  @include transition(all ease .1s);
+  @include transition(all ease .05s);
   font-family: $basefont;
   @include box-sizing;
   outline: 0;
