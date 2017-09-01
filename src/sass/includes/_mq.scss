@@ -1,12 +1,13 @@
-@media (min-width: 900px) and (max-width: 1000px) {
+@media (min-width: 900px) and (max-width: 1050px) {
   .app {
     .site-hero {
       .realtime-app {
-        width: 44%;
+        width: 50%;
       }
       .info-section {
-        font-size: .77em;
-        width: 56%;
+        padding: 10px 30px;
+        font-size: .83em;
+        width: 50%;
       }
     }
   }
@@ -19,7 +20,7 @@
         width: 45%;
       }
       .info-section {
-        font-size: .77em;
+        font-size: .8em;
         width: 55%;
       }
     }
@@ -33,29 +34,34 @@
         width: 50%;
       }
       .info-section {
-        font-size: .67em;
+        padding: 10px 25px;
+        font-size: .75em;
         width: 50%;
       }
     }
   }
 }
 
-@media (min-width: 600px) and (max-width: 699px) {
+@media (min-width: 601px) and (max-width: 699px) {
   .app {
     .site-hero {
       .realtime-app {
-        width: 44%;
+        width: 50%;
       }
       .info-section {
-        font-size: .77em;
-        width: 56%;
+        padding: 5px 20px;
+        font-size: .68em;
+        width: 50%;
+      }
+      .bot-platforms a {
+        margin-bottom: 6px;
       }
     }
     header {
       padding: 10px 15px 10px 35px;
     }
     .site-nav li {
-      margin-right: 5px;
+      // margin-right: 5px;
     }
   }
 }
@@ -82,48 +88,108 @@
         padding: 10px 20px 10px 3px;
         margin-top: -2px;
         li {
-          margin-right: 8px;
-        }
-      }
-    } 
-  } 
-}
-
-@media (min-width: 499px) and (max-width: 530px) {
-  html {
-    overflow-y: scroll;
-  }
-  .app {
-    nav.site-nav {
-      li {
-        a {
-          font-size: 0.85em;
+          // margin-right: 8px;
         }
       }
     }
   }
 }
 
-@media (max-width: 500px) {
-  .site-nav {
-    text-align: center;
-    width: $full;
-    padding: 0;
-  }
-  header .logo {
-    text-align: center;
-    margin: 0 auto;
+@media (max-width: 600px) {
+  html {
+    overflow-y: scroll;
   }
   .app {
+    .site-nav {
+      text-align: center;
+      width: $full;
+      padding: 0;
+    }
+    header .logo {
+      display: inline-block;
+      text-align: center;
+      margin: 0 auto;
+      width: $full;
+      > img {
+        text-align: center;
+        margin: 0 auto;
+        width: 120px;
+      }
+    }
     .site-hero {
       .info-section {
-        font-size: .8em;
+        font-size: .75em;
       }
       .realtime-app,
       .info-section {
         width: $full;
         float: none;
       }
+    }
+  }
+}
+
+@media (min-width: 500px) and (max-width: 420px) {
+  .app {
+    .site-hero {
+      .realtime-app {
+        width: 50%;
+      }
+      .info-section {
+        padding: 10px 20px;
+        font-size: .65em;
+        width: 50%;
+      }
+    }
+    
+    header {
+      padding: 10px 5px 10px 10px;
+      .logo > img {
+        width: 120px;
+      }
+      .site-nav {
+        padding: 10px 20px 10px 3px;
+        margin-top: -2px;
+        li {
+          // margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 380px) and (max-width: 442px) {
+  .app {
+    .site-hero {
+      .info-section {
+        padding: 10px 20px;
+      }  
+    }
+  } 
+}
+
+@media (min-width: 328px) and (max-width: 381px) {
+  .app {
+    .site-hero {
+      .info-section {
+        padding: 10px 20px;
+        font-size: .7em;
+      }  
+    }
+  }
+}
+
+@media (max-width: 327px) {
+  .app {
+    .site-hero {
+      .info-section {
+        padding: 10px 20px;
+        font-size: .65em;
+      }  
+    }
+    header .site-nav li {
+      margin-right: 13px;
+      font-size: .8em;
     }
   }
 }
