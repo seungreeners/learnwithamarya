@@ -67,6 +67,7 @@ header .site-nav {
     list-style-type: none;
     display: inline-block;
     margin-right: 20px;
+    font-size: 1em;
     &:last-child {
       margin-right: 0;
     }
@@ -97,6 +98,7 @@ header .site-nav {
 
 .info-section {
   background: $basecolor url('../../images/bg.jpg') no-repeat;
+  @include browser-prefix('background-size', cover);
   border-right: 1px solid rgba(#D3D3D3, .7);
   padding: 20px 40px;
   width: 70%;
@@ -129,7 +131,6 @@ header .site-nav {
   width: 30%;
   > iframe {
     position: relative;
-    height: $full;
     border: none;
   }
 }
@@ -186,5 +187,23 @@ header .site-nav {
       margin-right: 0;
     }
 
+  }
+}
+.modal {
+  @include transition(top, visibility .12s ease-in, box-shadow .5s ease .15s);
+  @include transform(translate(-50%, -50%));
+  @include border-radius(2px);
+  background: #BC7474;
+  visibility: hidden;
+  min-height: 228px;
+  position: fixed;
+  padding: 1em;
+  width: 396px;
+  left: 50%;
+  top: 0%;
+  &.visible {
+    visibility: visible;
+    @extend .shadow;
+    top: 50%;
   }
 }
