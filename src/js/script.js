@@ -1,16 +1,17 @@
-// let's get started.
-var links = document.querySelectorAll('a[href="#"]');
+// Let's get started.
+const links = document.querySelectorAll('a[href="#"]');
 
-for (var i = 0; i < links.length; i++) {
-  var link = links[i];
-  link.addEventListener('click', function(event) {
+for (let i = 0; i < links.length; i++) {
+  const link = links[i];
+  link.addEventListener('click', event => {
     event.preventDefault();
   }, false);
 }
 
-// get the iframe stuff.
-var webButton = document.getElementById('web');
-var iframe = document.getElementsByTagName('iframe')[0];
-var iframeDoc = (iframe.contentDocument) ? iframe.contentDocument : iframe.contentWindow.document;
+// Get the iframe stuff.
+const webButton = document.getElementById('web');
+const iframe = document.getElementsByTagName('iframe')[0];
 
-console.log(iframeDoc);
+const iframeDoc = (iframe.contentDocument) 
+                ? iframe.contentDocument
+                : iframe.contentWindow.document;
