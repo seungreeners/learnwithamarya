@@ -1,2 +1,2 @@
 # Amarya chatbot
-Your personal cooking tutor Always :)
+Your Personal cooking tutor always :)
